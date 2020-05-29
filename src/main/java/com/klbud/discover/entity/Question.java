@@ -9,4 +9,6 @@ public class Question {
     public Integer question_id;
     public String question_answer;
     public Integer question_answer_id;
+
+    public String score;
 }

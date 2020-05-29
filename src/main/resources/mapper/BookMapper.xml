@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.klbud.discover.dao.BookMapper">
-    <select id="getAllBooks" resultType="com.klbud.discover.entity.Question">
-        SELECT * FROM questionnaire_answer where is_deleted = 0
+    <select id="getList" resultType="com.klbud.discover.entity.Question">
+        select score from staff_evaluation_detail limit 10;
     </select>
 </mapper>

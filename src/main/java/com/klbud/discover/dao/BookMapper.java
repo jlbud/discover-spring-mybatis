@@ -1,7 +1,9 @@
 package com.klbud.discover.dao;
 
+import com.klbud.discover.annotation.DbSource;
 import com.klbud.discover.entity.Question;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -10,7 +12,8 @@ import java.util.List;
  * 2020/5/25 - 16:45
  */
 
-@Mapper
+@Repository
 public interface BookMapper {
-    List<Question> getAllBooks();
+    @DbSource
+    List<Question> getList();
 }

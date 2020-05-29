@@ -1,7 +1,7 @@
 package com.klbud.discover.controller;
 
 import com.klbud.discover.entity.Question;
-import com.klbud.discover.service.IBookService;
+import com.klbud.discover.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,7 +15,7 @@ import java.util.List;
 @RestController
 public class HelloController {
     @Autowired
-    public IBookService service;
+    public BookService service;
 
     @GetMapping("/hello")
     public List<Question> hello() {
